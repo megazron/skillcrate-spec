@@ -1,5 +1,10 @@
 # SkillCrate
 
+![demo](docs/img/demo.gif)
+
+*RViz simulation (Kinova Gen3). Before vs after.*
+
+
 **A versioned, checkable package format for robot skills.** The `.whl` and `pip check` for one-tap skills, not the skill and not the marketplace.
 
 An August 2026 survey of commercial robot-skill marketplaces notes that they already ship one-tap skills, but only as **static playback**. That leaves six properties open: adaptation, cross-embodiment portability, provenance, safety verification, composition, and standardisation. This repo does not build a marketplace or a learning system. It ships a concrete manifest format plus reference tooling that makes those six properties **explicit in the package and checkable by a command**.
