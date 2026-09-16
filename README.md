@@ -2,7 +2,7 @@
 
 ![demo](docs/img/demo.gif)
 
-*RViz simulation (Kinova Gen3). Before vs after.*
+*Four test scenarios in RViz (Kinova Gen3).*
 
 **A versioned, checkable package format for robot skills.** The `.whl` and `pip check` for one-tap skills, not the skill and not the marketplace.
 
