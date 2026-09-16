@@ -4,7 +4,6 @@
 
 *RViz simulation (Kinova Gen3). Before vs after.*
 
-
 **A versioned, checkable package format for robot skills.** The `.whl` and `pip check` for one-tap skills, not the skill and not the marketplace.
 
 An August 2026 survey of commercial robot-skill marketplaces notes that they already ship one-tap skills, but only as **static playback**. That leaves six properties open: adaptation, cross-embodiment portability, provenance, safety verification, composition, and standardisation. This repo does not build a marketplace or a learning system. It ships a concrete manifest format plus reference tooling that makes those six properties **explicit in the package and checkable by a command**.
@@ -114,10 +113,6 @@ integrity: {}                     # sha256 per payload, filled on save
 **Safety verification.** `skillpkg verify-safety --robot robot.yaml --world world.yaml` refuses a skill that assumes a force, speed or clearance the target robot cannot honour, and refuses to green-light one whose preconditions are false in the given world. Conditions are evaluated by a whitelisted `ast` parser: no calls, no attribute access, no imports.
 
 **Composition.** A composed skill lists sub-skills by reference. `skillpkg compose --registry ./registry` resolves each and checks the handoff: step N's postconditions must include every precondition step N+1 needs. A gap is a failure with the exact missing condition, so composed skills are validated, not just concatenated.
-
-## Origin
-
-Extracted alongside a set of engineering toolkits from an MSc project, "Multimodal control of a wearable dual-arm robotic system for assisted object manipulation" (Imperial College London, 2026): <https://github.com/megazron/Multimodal-control-of-a-wearable-dual-arm-robotic-system-for-assisted-object-manipulation>. The provenance, single-source-of-truth and safety-gating discipline here come straight from that work; see the sibling repos [twin-truth](https://github.com/megazron/twin-truth) and [cleanbench-eval](https://github.com/megazron/cleanbench-eval).
 
 ## Limitations
 
