@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regenerate docs/img/ for skill-package-spec (hand-built SVG, no deps).
+"""Regenerate docs/img/ for skillcrate-spec (hand-built SVG, no deps).
 
     python3 docs/make_figures.py
 """

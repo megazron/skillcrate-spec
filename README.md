@@ -1,4 +1,4 @@
-# skill-package-spec
+# SkillCrate
 
 **A versioned, checkable package format for robot skills.** The `.whl` and `pip check` for one-tap skills, not the skill and not the marketplace.
 
@@ -24,7 +24,7 @@ It is not a marketplace, not a policy or a learner, and not a runtime. It carrie
 ## Install
 
 ```
-pip install git+https://github.com/megazron/skill-package-spec
+pip install git+https://github.com/megazron/skillcrate-spec
 ```
 
 Or clone and run from source with `PYTHONPATH=src`.
@@ -112,7 +112,7 @@ integrity: {}                     # sha256 per payload, filled on save
 
 ## Origin
 
-Extracted alongside a set of engineering toolkits from an MSc project, "Multimodal control of a wearable dual-arm robotic system for assisted object manipulation" (Imperial College London, 2026): <https://github.com/megazron/Multimodal-control-of-a-wearable-dual-arm-robotic-system-for-assisted-object-manipulation>. The provenance, single-source-of-truth and safety-gating discipline here come straight from that work; see the sibling repos [twin-truth](https://github.com/megazron/twin-truth) and [robobench-harness](https://github.com/megazron/robobench-harness).
+Extracted alongside a set of engineering toolkits from an MSc project, "Multimodal control of a wearable dual-arm robotic system for assisted object manipulation" (Imperial College London, 2026): <https://github.com/megazron/Multimodal-control-of-a-wearable-dual-arm-robotic-system-for-assisted-object-manipulation>. The provenance, single-source-of-truth and safety-gating discipline here come straight from that work; see the sibling repos [twin-truth](https://github.com/megazron/twin-truth) and [cleanbench-eval](https://github.com/megazron/cleanbench-eval).
 
 ## Limitations
 

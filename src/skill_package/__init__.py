@@ -1,4 +1,4 @@
-"""skill-package-spec: a versioned, checkable package format for robot skills.
+"""skillcrate-spec: a versioned, checkable package format for robot skills.
 
 Makes the six properties commercial one-tap skills lack -- adaptation,
 cross-embodiment portability, provenance, safety verification, composition and

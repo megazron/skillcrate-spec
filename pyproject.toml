@@ -3,7 +3,7 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "skill-package-spec"
+name = "skillcrate-spec"
 version = "0.1.0"
 description = "A versioned, checkable package format for robot skills: provenance, cross-embodiment portability, safety verification, and composition."
 readme = "README.md"
