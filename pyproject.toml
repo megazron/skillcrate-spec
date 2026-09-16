@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skill-package-spec"
+version = "0.1.0"
+description = "A versioned, checkable package format for robot skills: provenance, cross-embodiment portability, safety verification, and composition."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Gaus Mohiuddin Sayyad"}]
+dependencies = ["pyyaml>=5.4"]
+
+[project.scripts]
+skillpkg = "skill_package.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

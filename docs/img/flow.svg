@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="300" viewBox="0 0 960 300" font-family="'Segoe UI',Helvetica,Arial,sans-serif">
+<rect width="960" height="300" fill="#ffffff"/>
+<defs><marker id="a" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#6b7580"/></marker></defs>
+<text x="30" y="42" font-size="22" font-weight="700" fill="#1f2933">Each step is a gate</text>
+<text x="30" y="66" font-size="13" fill="#6b7580">A skill that fails any check is refused with a reason; it never runs on best effort.</text>
+<rect x="30" y="110" width="160" height="84" rx="10" fill="#e3f2f4" stroke="#0b7285" stroke-width="2"/>
+<text x="110.0" y="146" font-size="16" font-weight="700" fill="#1f2933" text-anchor="middle" font-family="'Cascadia Code','Consolas',monospace">validate</text>
+<text x="110.0" y="170" font-size="12" fill="#6b7580" text-anchor="middle">schema + semver</text>
+<line x1="190" y1="152.0" x2="218" y2="152.0" stroke="#6b7580" stroke-width="1.8" marker-end="url(#a)"/>
+<rect x="218" y="110" width="160" height="84" rx="10" fill="#e8f5ec" stroke="#2b8a3e" stroke-width="2"/>
+<text x="298.0" y="146" font-size="16" font-weight="700" fill="#1f2933" text-anchor="middle" font-family="'Cascadia Code','Consolas',monospace">verify</text>
+<text x="298.0" y="170" font-size="12" fill="#6b7580" text-anchor="middle">payload hashes</text>
+<line x1="378" y1="152.0" x2="406" y2="152.0" stroke="#6b7580" stroke-width="1.8" marker-end="url(#a)"/>
+<rect x="406" y="110" width="160" height="84" rx="10" fill="#e3f2f4" stroke="#0b7285" stroke-width="2"/>
+<text x="486.0" y="146" font-size="16" font-weight="700" fill="#1f2933" text-anchor="middle" font-family="'Cascadia Code','Consolas',monospace">portability</text>
+<text x="486.0" y="170" font-size="12" fill="#6b7580" text-anchor="middle">every remap declared?</text>
+<line x1="566" y1="152.0" x2="594" y2="152.0" stroke="#6b7580" stroke-width="1.8" marker-end="url(#a)"/>
+<rect x="594" y="110" width="160" height="84" rx="10" fill="#e3f2f4" stroke="#0b7285" stroke-width="2"/>
+<text x="674.0" y="146" font-size="16" font-weight="700" fill="#1f2933" text-anchor="middle" font-family="'Cascadia Code','Consolas',monospace">adapt</text>
+<text x="674.0" y="170" font-size="12" fill="#6b7580" text-anchor="middle">apply the remaps</text>
+<line x1="754" y1="152.0" x2="782" y2="152.0" stroke="#6b7580" stroke-width="1.8" marker-end="url(#a)"/>
+<rect x="782" y="110" width="160" height="84" rx="10" fill="#e3f2f4" stroke="#0b7285" stroke-width="2"/>
+<text x="862.0" y="146" font-size="16" font-weight="700" fill="#1f2933" text-anchor="middle" font-family="'Cascadia Code','Consolas',monospace">compose</text>
+<text x="862.0" y="170" font-size="12" fill="#6b7580" text-anchor="middle">handoff conditions</text>
+<text x="30" y="244" font-size="12.5" fill="#6b7580">refuse points: bad semver · hash mismatch · undeclared remap · limit above the robot’s · unmet handoff precondition</text>
+</svg>

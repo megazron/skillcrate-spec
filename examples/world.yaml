@@ -1,0 +1,4 @@
+gripper_open: true
+cube_visible: true
+cube_grasped: false
+table_clearance_m: 0.20

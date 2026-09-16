@@ -1,0 +1,48 @@
+schema_version: 1
+name: place_object
+version: 1.0.0
+description: Place a held object at a target pad and open the gripper.
+provenance:
+  author: megazron
+  created: '2026-08-21'
+  source: recorded
+  captured_on: gen3_left
+  episodes: []
+  derived_from: []
+embodiment:
+  name: gen3_left
+  dof: 7
+  joint_names:
+  - joint_1
+  - joint_2
+  - joint_3
+  - joint_4
+  - joint_5
+  - joint_6
+  - joint_7
+  ee_frame: tool_frame
+  gripper: robotiq_2f85
+  control_mode: position
+  units:
+    angle: rad
+    length: m
+adaptation:
+  joint_map: {}
+  frame_transform: {}
+  unit_conversion: {}
+  workspace_bounds: {}
+  requires: []
+safety:
+  max_force_n: 15.0
+  max_speed_mps: 0.25
+  min_clearance_m: 0.12
+  preconditions:
+  - cube_grasped
+  postconditions:
+  - cube_placed and gripper_open
+  verified: {}
+payload:
+- trajectory.csv
+integrity:
+  trajectory.csv: 23fd7345f8a1039b85efbd73646d9c051477594e1b80a3a7a5d88d399655ce24
+id: sk_dc5a2e1239feb122dcde9f7c

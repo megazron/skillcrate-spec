@@ -1,0 +1,35 @@
+schema_version: 1
+name: pick_and_place
+version: 1.0.0
+description: Pick a cube and place it on the target pad, as a composed skill.
+provenance:
+  author: megazron
+  created: '2026-08-22'
+  source: composed
+  captured_on: gen3_left
+  episodes: []
+  derived_from: []
+embodiment:
+  name: gen3_left
+  dof: 7
+  joint_names: [joint_1, joint_2, joint_3, joint_4, joint_5, joint_6, joint_7]
+  ee_frame: tool_frame
+  gripper: robotiq_2f85
+  control_mode: position
+  units: {angle: rad, length: m}
+adaptation: {requires: []}
+safety:
+  preconditions:
+    - gripper_open and cube_visible and table_clearance_m > 0.12
+  postconditions:
+    - cube_placed and gripper_open
+  verified: {}
+composition:
+  kind: sequence
+  steps:
+    - skill: pick_cube
+      bind: {cube: red_cube}
+    - skill: place_object
+      bind: {pad: left_pad}
+payload: []
+integrity: {}

@@ -1,0 +1,7 @@
+name: ur7e
+dof: 7
+joint_names: [shoulder_pan, shoulder_lift, elbow, wrist_1, wrist_2, wrist_3, wrist_extra]
+ee_frame: tool0
+gripper: robotiq_2f85
+control_mode: position
+units: {angle: deg, length: m}

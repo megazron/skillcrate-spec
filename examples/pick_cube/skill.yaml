@@ -1,0 +1,56 @@
+schema_version: 1
+name: pick_cube
+version: 1.0.0
+description: Pick a cube from the table with a parallel gripper.
+provenance:
+  author: megazron
+  created: '2026-08-21'
+  source: recorded
+  captured_on: gen3_left
+  episodes:
+  - id: ep_2026_08_21_014
+    sha256: 0
+  derived_from: []
+embodiment:
+  name: gen3_left
+  dof: 7
+  joint_names:
+  - joint_1
+  - joint_2
+  - joint_3
+  - joint_4
+  - joint_5
+  - joint_6
+  - joint_7
+  ee_frame: tool_frame
+  gripper: robotiq_2f85
+  control_mode: position
+  units:
+    angle: rad
+    length: m
+adaptation:
+  joint_map: {}
+  frame_transform: {}
+  unit_conversion: {}
+  workspace_bounds: {}
+  requires: []
+safety:
+  max_force_n: 20.0
+  max_speed_mps: 0.25
+  min_clearance_m: 0.12
+  preconditions:
+  - gripper_open and cube_visible and table_clearance_m > 0.12
+  postconditions:
+  - cube_grasped
+  verified:
+    tool: skillpkg
+    when: '2026-08-22'
+    result: pass
+    checks:
+    - integrity
+    - preconditions
+payload:
+- trajectory.csv
+integrity:
+  trajectory.csv: 8d26f31aac8fd650c0332d7a8b489f9f689dddc0da50ee447586647d29319c25
+id: sk_80cdd2cad508a9c39dd08c48
